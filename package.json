@@ -1,0 +1,20 @@
+{
+  "name": "challenge-12-employee-tracker",
+  "version": "1.0.0",
+  "description": "Part of the ESMT Coding Boot Camp. The assignment is to build a command-line application to manage an employee database using Node.js, Inquirer, and MySQL.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tlcoles/Challenge-12-Employee-Tracker.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/tlcoles/Challenge-12-Employee-Tracker/issues"
+  },
+  "homepage": "https://github.com/tlcoles/Challenge-12-Employee-Tracker#readme"
+}
