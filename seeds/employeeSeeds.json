@@ -1,211 +1,165 @@
-{ "Employees": 
+{ "employee": 
 [{
-  "employee_id": "3766644033",
-  "first_name": "Bernete",
-  "last_name": "Lerego",
-  "title": "Developer II",
-  "salary": "€69022.00",
-  "role_id": "105",
-  "manager_id": "6743027928"
-}, {
-  "employee_id": "6743027928",
+  "id": "6743027928",
   "first_name": "Anthea",
   "last_name": "Aspenlon",
-  "title": "Systems Administrator I",
-  "salary": "€166382.00",
   "role_id": "101",
   "manager_id": ""
-}, {
-  "employee_id": "2709820838",
-  "first_name": "Jasun",
-  "last_name": "Longmaid",
-  "title": "IT Specialist",
-  "salary": "€76841.00",
-  "role_id": "102",
-  "manager_id": "6743027928"
-}, {
-  "employee_id": "5633232607",
-  "first_name": "Kinny",
-  "last_name": "Gaitung",
-  "title": "Developer I",
-  "salary": "€66149.00",
+},{
+  "id": "37666",
+  "first_name": "Bernette",
+  "last_name": "Lerego",
   "role_id": "104",
   "manager_id": "6743027928"
 }, {
-  "employee_id": "7927411713",
-  "first_name": "Marguerite",
-  "last_name": "Goscar",
-  "title": "Information Systems Manager",
-  "salary": "€62584.00",
-  "role_id": "103",
-  "manager_id": "6743027928"
-}, {
-  "employee_id": "2094804313",
-  "first_name": "Gordy",
-  "last_name": "McGready",
-  "title": "Executive Lead",
-  "salary": "€96636.00",
-  "role_id": "201",
+  "id": "6743027928",
+  "first_name": "Anthea",
+  "last_name": "Aspenlon",
+  "role_id": "101",
   "manager_id": ""
 }, {
-  "employee_id": "5790875556",
-  "first_name": "Glyn",
-  "last_name": "Tobias",
-  "title": "Account Manager",
-  "salary": "€55000.00",
-  "role_id": "202",
-  "manager_id": "2094804313"
-}, {
-  "employee_id": "0779529596",
-  "first_name": "Andres",
-  "last_name": "Templeman",
-  "title": "Sales Associate",
-  "salary": "€40000.00",
-  "role_id": "203",
-  "manager_id": "2094804313"
-}, {
-  "employee_id": "0839369859",
-  "first_name": "Dory",
-  "last_name": "Levison",
-  "title": "Business Systems Analyst",
-  "salary": "€65000.00",
-  "role_id": "204",
-  "manager_id": "2094804313"
-}, {
-  "employee_id": "4164558857",
-  "first_name": "Rowena",
-  "last_name": "Lahive",
-  "title": "Sales Associate",
-  "salary": "€40000.00",
-  "role_id": "203",
-  "manager_id": "2094804313"
-}, {
-  "employee_id": "5884567871",
-  "first_name": "Josee",
-  "last_name": "Linke",
-  "title": "Chief Financial Officer",
-  "salary": "€95142.00",
-  "role_id": "301",
-  "manager_id": ""
-}, {
-  "employee_id": "8958821876",
-  "first_name": "Britta",
-  "last_name": "Churn",
-  "title": "Payment Adjustment Coordinator",
-  "salary": "€39116.00",
-  "role_id": "303",
-  "manager_id": "5884567871"
-}, {
-  "employee_id": "8862524137",
-  "first_name": "Earle",
-  "last_name": "Suston",
-  "title": "Financial Accounts Specialist",
-  "salary": "€48659.00",
-  "role_id": "302",
-  "manager_id": "5884567871"
-}, {
-  "employee_id": "8864809856",
-  "first_name": "Brigham",
-  "last_name": "Aynold",
-  "title": "Human Resources Manager",
-  "salary": "€86007.00",
-  "role_id": "501",
-  "manager_id": ""
-}, {
-  "employee_id": "4722559449",
-  "first_name": "Ardelle",
-  "last_name": "Crusham",
-  "title": "Chief Marketing Officer",
-  "salary": "€60844.00",
-  "role_id": "401",
-  "manager_id": ""
-}, {
-  "employee_id": "4590688182",
-  "first_name": "Jada",
-  "last_name": "Tamblyn",
-  "title": "Social Media Specialist",
-  "salary": "€35157.00",
-  "role_id": "402",
-  "manager_id": "4722559449"
-}, {
-  "employee_id": "0448849119",
-  "first_name": "Garreth",
-  "last_name": "Comar",
-  "title": "Communications Associate",
-  "salary": "€17091.00",
-  "role_id": "404",
-  "manager_id": "4722559449"
-}, {
-  "employee_id": "8094556471",
-  "first_name": "Kristian",
-  "last_name": "Buss",
-  "title": "Facilities Manager",
-  "salary": "€69987.00",
-  "role_id": "701",
-  "manager_id": ""
-}, {
-  "employee_id": "3764778083",
-  "first_name": "Arlen",
-  "last_name": "Dunsire",
-  "title": "External Events Associate",
-  "salary": "€45000.00",
-  "role_id": "702",
-  "manager_id": "8094556471"
-}, {
-  "employee_id": "8536240342",
-  "first_name": "Barbette",
-  "last_name": "Dabes",
-  "title": "External Events Associate",
-  "salary": "€45000.00",
-  "role_id": "702",
-  "manager_id": "8094556471"
-}, {
-  "employee_id": "5092255609",
-  "first_name": "Idelle",
-  "last_name": "Proschek",
-  "title": "Legal Assistant",
-  "salary": "€97562.00",
-  "role_id": "602",
-  "manager_id": "2045888355"
-}, {
-  "employee_id": "2045888355",
-  "first_name": "Niala",
-  "last_name": "Louis",
-  "title": "Lawyer",
-  "salary": "€101165.00",
-  "role_id": "601",
-  "manager_id": ""
-}, {
-  "employee_id": "5526401553",
-  "first_name": "Marquita",
-  "last_name": "Jedrzejczak",
-  "title": "Legal Assistant",
-  "salary": "€93432.00",
-  "role_id": "602",
-  "manager_id": "2045888355"
-}, {
-  "employee_id": "1945365897",
-  "first_name": "Latitia",
-  "last_name": "Sloley",
-  "title": "Financial Accounts Specialist",
-  "salary": "€53445.00",
-  "role_id": "302",
-  "manager_id": "5884567871"
-}, {
-  "employee_id": "6593896004",
-  "first_name": "Xymenes",
-  "last_name": "Sparwell",
-  "title": "IT Specialist",
-  "salary": "€76841.00",
+  "id": "2709820838",
+  "first_name": "Jasun",
+  "last_name": "Longmaid",
   "role_id": "102",
   "manager_id": "6743027928"
 }, {
-  "employee_id": "8649678661",
+  "id": "5633232607",
+  "first_name": "Kinny",
+  "last_name": "Gaitung",
+  "role_id": "104",
+  "manager_id": "6743027928"
+}, {
+  "id": "7927411713",
+  "first_name": "Marguerite",
+  "last_name": "Goscar",
+  "role_id": "103",
+  "manager_id": "6743027928"
+}, {
+  "id": "2094804313",
+  "first_name": "Gordy",
+  "last_name": "McGready",
+  "role_id": "201",
+  "manager_id": ""
+}, {
+  "id": "5790875556",
+  "first_name": "Glyn",
+  "last_name": "Tobias",
+  "role_id": "202",
+  "manager_id": "2094804313"
+}, {
+  "id": "0779529596",
+  "first_name": "Andres",
+  "last_name": "Templeman",
+  "role_id": "203",
+  "manager_id": "2094804313"
+}, {
+  "id": "0839369859",
+  "first_name": "Dory",
+  "last_name": "Levison",
+  "role_id": "204",
+  "manager_id": "2094804313"
+}, {
+  "id": "4164558857",
+  "first_name": "Rowena",
+  "last_name": "Lahive",
+  "role_id": "203",
+  "manager_id": "2094804313"
+}, {
+  "id": "5884567871",
+  "first_name": "Josee",
+  "last_name": "Linke",
+  "role_id": "301",
+  "manager_id": ""
+}, {
+  "id": "8958821876",
+  "first_name": "Britta",
+  "last_name": "Churn",
+  "role_id": "303",
+  "manager_id": "5884567871"
+}, {
+  "id": "8862524137",
+  "first_name": "Earle",
+  "last_name": "Suston",
+  "role_id": "302",
+  "manager_id": "5884567871"
+}, {
+  "id": "8864809856",
+  "first_name": "Brigham",
+  "last_name": "Aynold",
+  "role_id": "501",
+  "manager_id": ""
+}, {
+  "id": "4722559449",
+  "first_name": "Ardelle",
+  "last_name": "Crusham",
+  "role_id": "401",
+  "manager_id": ""
+}, {
+  "id": "4590688182",
+  "first_name": "Jada",
+  "last_name": "Tamblyn",
+  "role_id": "402",
+  "manager_id": "4722559449"
+}, {
+  "id": "0448849119",
+  "first_name": "Garreth",
+  "last_name": "Comar",
+  "role_id": "404",
+  "manager_id": "4722559449"
+}, {
+  "id": "8094556471",
+  "first_name": "Kristian",
+  "last_name": "Buss",
+  "role_id": "701",
+  "manager_id": ""
+}, {
+  "id": "3764778083",
+  "first_name": "Arlen",
+  "last_name": "Dunsire",
+  "role_id": "702",
+  "manager_id": "8094556471"
+}, {
+  "id": "8536240342",
+  "first_name": "Barbette",
+  "last_name": "Dabes",
+  "role_id": "702",
+  "manager_id": "8094556471"
+}, {
+  "id": "5092255609",
+  "first_name": "Idelle",
+  "last_name": "Proschek",
+  "role_id": "602",
+  "manager_id": "2045888355"
+}, {
+  "id": "2045888355",
+  "first_name": "Niala",
+  "last_name": "Louis",
+  "role_id": "601",
+  "manager_id": ""
+}, {
+  "id": "5526401553",
+  "first_name": "Marquita",
+  "last_name": "Jedrzejczak",
+  "role_id": "602",
+  "manager_id": "2045888355"
+}, {
+  "id": "1945365897",
+  "first_name": "Latitia",
+  "last_name": "Sloley",
+  "role_id": "302",
+  "manager_id": "5884567871"
+}, {
+  "id": "6593896004",
+  "first_name": "Xymenes",
+  "last_name": "Sparwell",
+  "role_id": "102",
+  "manager_id": "6743027928"
+}, {
+  "id": "8649678661",
   "first_name": "Felicdad",
   "last_name": "Boulter",
-  "title": "Human Resources Associate",
-  "salary": "€30203.00",
-  "role_id": "501",
+  "role_id": "502",
   "manager_id": "8864809856"
 }]
 }

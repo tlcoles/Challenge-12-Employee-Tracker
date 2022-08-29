@@ -1,30 +1,40 @@
 DROP DATABASE IF EXISTS employees_db;
-CREATE DATABASE employees_db;
+CREATE DATABASE employees_db 
+DEFAULT CHARACTER SET utf8 
+DEFAULT COLLATE utf8_general_ci;
 
 USE employees_db;
 
-DROP TABLE IF EXISTS `department`;
 CREATE TABLE `department` (
-  `dept_id` int NOT NULL,
-  `dept_name` varchar(30) NOT NULL,
-  PRIMARY KEY (`dept_id`),
-  UNIQUE KEY `dept_name_UNIQUE` (`dept_name`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb3;
+    `id` INT NOT NULL,
+    `name` VARCHAR(30) NOT NULL,
+    PRIMARY KEY (`id`),
+    UNIQUE KEY `name_UNIQUE` (`name`)
+);
 
-DROP TABLE IF EXISTS `employee`;
-CREATE TABLE `employee` (
-  `employee_id` int NOT NULL,
-  `first_name` varchar(30) NOT NULL,
-  `last_name` varchar(30) NOT NULL,
-  `manager_id` int DEFAULT NULL,
-  PRIMARY KEY (`employee_id`),
-  UNIQUE KEY `employee_id_UNIQUE` (`employee_id`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb3;
-
-DROP TABLE IF EXISTS `role`;
 CREATE TABLE `role` (
-  `role_id` int NOT NULL,
-  `title` varchar(30) NOT NULL,
-  `salary` decimal(8,2) NOT NULL,
-  PRIMARY KEY (`role_id`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb3;
+    `id` INT NOT NULL,
+    `title` VARCHAR(30) NOT NULL,
+    `salary` DECIMAL(8 , 2 ) NOT NULL,
+    `department_id` INT NOT NULL,
+    PRIMARY KEY (`id`),
+    FOREIGN KEY (`department_id`)
+        REFERENCES `department` (`id`)
+        ON DELETE CASCADE
+);
+
+CREATE TABLE `employee` (
+    `id` INT NOT NULL,
+    `first_name` VARCHAR(30) NOT NULL,
+    `last_name` VARCHAR(30) NOT NULL,
+    `role_id` INT,
+    `manager_id` INT DEFAULT NULL,
+    PRIMARY KEY (`id`),
+    FOREIGN KEY (`role_id`)
+        REFERENCES role (`id`)
+        ON DELETE SET NULL,
+    FOREIGN KEY (`manager_id`)
+        REFERENCES `employee` (`id`)
+        ON DELETE SET NULL,
+    UNIQUE KEY `id_UNIQUE` (`id`)
+);
