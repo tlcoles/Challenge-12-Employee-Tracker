@@ -31,10 +31,9 @@ CREATE TABLE `employee` (
     `manager_id` INT DEFAULT NULL,
     PRIMARY KEY (`id`),
     FOREIGN KEY (`role_id`)
-        REFERENCES role (`id`)
+        REFERENCES `role` (`id`)
         ON DELETE SET NULL,
     FOREIGN KEY (`manager_id`)
         REFERENCES `employee` (`id`)
-        ON DELETE SET NULL,
-    UNIQUE KEY `id_UNIQUE` (`id`)
+        ON DELETE SET NULL
 );
