@@ -9,6 +9,28 @@ INSERT INTO department(id,name) VALUES
  (600,'Legal'),
  (700,'Facilities Management');
 
+ INSERT INTO role(id, title, salary, department_id) VALUES
+(101,'Systems Administrator I',166382.00,100),
+(102,'IT Specialist',76841.00,100),
+(103,'Systems Manager',62584.00,100),
+(104,'Developer',66150.00,100),
+(201,'Sales Lead, Europe',96636.00,200),
+(202,'Account Manager',55000.00,200),
+(203,'Sales Associate',40000.00,200),
+(204,'Business Systems Analyst',65000.00,200),
+(301,'Chief Financial Officer',95000.00,300),
+(302,'Financial Accounts Specialist',48650.00,300),
+(303,'Payment Adjustment Coordinator',39115.00,300),
+(401,'Chief Marketing Officer',62000.00,400),
+(402,'Social Media Specialist',35000.00,400),
+(403,'Communications Associate',18000.00,400),
+ (501,'Human Resources Manager',86000.00,500),
+ (502,'Human Resources Assistant',32000.00,500),
+ (601,'Lawyer',110000.00,600),
+ (602,'Legal Assistant',93400.00,600),
+ (701,'Facilities Manager',70000.00,700),
+ (702,'External Events Associate',45000.00,700);
+
 INSERT INTO employee(id, first_name, last_name, role_id, manager_id) VALUES
  (1743027928,'Anthea','Aspenlon',101,NULL),
  (1709820838,'Jasun','Longmaid',102,1743027928),
