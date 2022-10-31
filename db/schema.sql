@@ -2,6 +2,8 @@ DROP DATABASE IF EXISTS employees_db;
 CREATE DATABASE employees_db 
 DEFAULT CHARACTER SET utf8 
 DEFAULT COLLATE utf8_general_ci;
+SET GLOBAL FOREIGN_KEY_CHECKS=0;
+
 
 USE employees_db;
 
@@ -35,5 +37,6 @@ CREATE TABLE `employee` (
         ON DELETE SET NULL,
     FOREIGN KEY (`manager_id`)
         REFERENCES `employee` (`id`)
-        ON DELETE SET NULL
+        ON DELETE SET NULL,
+        UNIQUE KEY `id_UNIQUE` (`id`)
 );
