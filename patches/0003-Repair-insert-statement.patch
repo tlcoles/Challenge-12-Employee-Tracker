@@ -1,0 +1,36 @@
+From 21e3148746f5b31dd50ecf7a274223db6a1ef46b Mon Sep 17 00:00:00 2001
+From: Tillmann Fiehn <tillmann.fiehn@here.com>
+Date: Fri, 4 Nov 2022 22:28:06 +0100
+Subject: [PATCH 3/3] Repair insert statement
+
+The MySQL insert statements are like:
+
+   INSERT INTO table (field0, field1, ...) VALUES (?, ?, ...)
+
+So, it's best to call the db.query("INSERT INTO ....", [value0, value1, ... ]) with the array parameter.
+---
+ lib/questions.js | 8 ++++----
+ 1 file changed, 4 insertions(+), 4 deletions(-)
+
+diff --git a/lib/questions.js b/lib/questions.js
+index aa980e7..6c051e9 100644
+--- a/lib/questions.js
++++ b/lib/questions.js
+@@ -240,10 +240,10 @@ async function askQs() {
+         await inquirer
+             .prompt(deptQs)
+             .then(function (deptAs) {
+-                db.query("INSERT INTO employees_db.department SET ?", {
+-                id: deptAs.id, 
+-                name: deptAs.deptName
+-                }, function (error) {
++                db.query("INSERT INTO employees_db.department (id, name) VALUES (?, ?)", [
++                    deptAs.id,
++                    deptAs.deptName
++                ], function (error) {
+                 if (error) throw error;
+             })
+             });
+-- 
+2.33.0
+

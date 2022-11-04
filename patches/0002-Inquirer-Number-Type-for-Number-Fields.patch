@@ -1,0 +1,34 @@
+From 334e499ebcd05ef49c500df42c8268f3dc1bb192 Mon Sep 17 00:00:00 2001
+From: Tillmann Fiehn <tillmann.fiehn@here.com>
+Date: Fri, 4 Nov 2022 22:31:58 +0100
+Subject: [PATCH 2/3] Inquirer Number Type for Number Fields
+
+---
+ lib/questions.js | 6 +++---
+ 1 file changed, 3 insertions(+), 3 deletions(-)
+
+diff --git a/lib/questions.js b/lib/questions.js
+index 0bf80b3..aa980e7 100644
+--- a/lib/questions.js
++++ b/lib/questions.js
+@@ -66,14 +66,14 @@ async function askQs() {
+ 
+     const deptQs = [
+         {
+-            type: 'input',
++            type: 'number',
+             name: 'id',
+             message: 'Provide a department id. ',
+             // Validate that entry is a number
+             default: () => {},
+             validate: function (id) {
+-                valid = /^\d+$/.test(id)
+-                if (valid) {
++                // valid = /^\d+$/.test(id)
++                if (true) {
+                 return true;
+                 } else {
+                     console.info(" is invalid.  Please enter a valid number.")
+-- 
+2.33.0
+
