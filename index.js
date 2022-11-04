@@ -12,4 +12,5 @@ app.use(express.urlencoded({ extended: false }));
 
 //! Connect to database
 const db = require('./connection');
+
 questions();
