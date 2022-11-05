@@ -3,12 +3,10 @@ Part of the ESMT Coding Boot Camp. The assignment is to build a command-line app
 
 ## Video walk-through
 
-<a href="https://www.loom.com/share/5423c8081a024096a005ed9049f4fef5">
+<a href="https://www.loom.com/share/adf4466bd17c411eb8bf4fdae10f5cfb">
     <p>Watch video of the command-line application on Loom</p>
     <img style="max-width:300px;" src="https://cdn.loom.com/sessions/thumbnails/5423c8081a024096a005ed9049f4fef5-with-play.gif">
 </a>
-
-
 
 ## Challenges
 * Structuring Inquirer questions  
