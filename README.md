@@ -12,11 +12,14 @@ Part of the ESMT Coding Boot Camp. The assignment is to build a command-line app
 * Structuring Inquirer questions  
 * Pushing data from Inquirer into MySQL
 * Validating seed data
+* Troubleshooting MySQL errors
+* Type validation (input versus number)
 
 ## Gratitude
 * Sample data from [Mockaroo](https://www.mockaroo.com/)
 * Quick option to [Convert JSON to SQL](https://www.convertjson.com/json-to-sql.htm)
 * Lindsay Chapin for [Adding to a table with Inquirer results](https://www.youtube.com/watch?v=gZugKSoAyoY)
+* Tillmann Fiehn for troubleshooting support and patching instruction
 
 ## Contact 
 Tammi L. Coles [@tlcoles](https://github.com/tlcoles)  
